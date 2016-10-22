@@ -2,7 +2,7 @@
 menu:
   Home: /
   Archives: /archives
-rss: /atom.xml
+  ##rss: /atom.xml  ##停用rss功能
 
 # Content
 excerpt_link: Read More
@@ -11,11 +11,11 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
+- recent_posts  ##修改侧边排版
 - tagcloud
 - archive
-- recent_posts
+- category
+  ##- tag
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
