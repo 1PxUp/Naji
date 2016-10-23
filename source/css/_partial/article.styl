@@ -6,10 +6,12 @@
   overflow: hidden
 
 .article-header
-  padding: article-padding article-padding 0
-
+  padding: article-padding
+  border-left: 0.4em solid color-default
+ 
 .article-title
   text-decoration: none
+  text-transform: capitalize
   font-size: 2em
   font-weight: bold
   color: color-default
@@ -25,40 +27,66 @@
 .article-date
   @extend $block-caption
   float: left
+  &:before
+    color: black
+    font-family: SimHei
+    content: "发表于:"
+  &:after
+    margin-left: 0.5em
+    color: gray
+    font-weight: bold
+    content:"\007c"
 
 .article-category
   float: left
   line-height: 1em
   color: #ccc
   text-shadow: 0 1px #fff
-  margin-left: 8px
+  margin-left: 1em
   &:before
-    content: "\2022"
+    color: black
+    font-family: SimHei
+    content: "分类:"
 
 .article-category-link
   @extend $block-caption
-  margin: 0 12px 1em
 
 .article-footer
   clearfix()
   font-size: 0.85em
   line-height: line-height
-  border-top: 1px solid color-border
-  padding-top: line-height
-  margin: 0 article-padding article-padding
+  border-bottom: 1px solid color-border
+  padding-bottom: 0.5em
+  margin: 0 article-padding 0
   a
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-theme-blue
+
+.article-tag-list
+    overflow: hidden
+    a
+      color: white       
+    &:before
+      float: left
+      color: black
+      font-family: SimHei
+      margin-right: 0.5em
+      margin-top: 0.2em
+      content: "标签:"
 
 .article-tag-list-item
   float: left
+  padding: 0.2em 0.5em
+  background: color-default
+  border-radius: 0.3em
   margin-right: 10px
+ 
 
 .article-tag-list-link
   &:before
-    content: "#"
+    content: ""
 
 .article-comment-link
   float: right
@@ -70,7 +98,7 @@
 .article-share-link
   cursor: pointer
   float: right
-  margin-left: 20px
+  margin-right: 0.5em
   &:before
     content: "\f064"
     font-family: font-icon
