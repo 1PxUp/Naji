@@ -65,7 +65,7 @@
       color: color-theme-blue
 
 .article-tag-list
-    overflow: hidden
+    overflow-x: auto
     a
       color: white       
     &:before
@@ -75,6 +75,9 @@
       margin-right: 0.5em
       margin-top: 0.2em
       content: "标签:"
+    &:after
+      clear: both
+      content: ""
 
 .article-tag-list-item
   float: left
