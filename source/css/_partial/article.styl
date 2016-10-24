@@ -4,6 +4,16 @@
 .article-inner
   @extend $block
   overflow: hidden
+  &:after
+    display: block
+    background: color-lightgray
+    color: color-gray
+    text-align: center
+    font-variant: small-caps
+    line-height: line-height
+    font-size: 0.5em
+    text-shadow: 0em 0em  rgba(0, 0, 0, 0.2) 
+    content: "-end-"
 
 .article-header
   padding: article-padding
@@ -28,8 +38,7 @@
   @extend $block-caption
   float: left
   &:before
-    color: black
-    font-family: SimHei
+    @extend $before-title-style
     content: "发表于:"
   &:after
     margin-left: 0.5em
@@ -44,8 +53,7 @@
   text-shadow: 0 1px #fff
   margin-left: 1em
   &:before
-    color: black
-    font-family: SimHei
+    @extend $before-title-style
     content: "分类:"
 
 .article-category-link
@@ -62,22 +70,19 @@
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-theme-blue
+      color: color-blue
 
 .article-tag-list
     overflow-x: auto
     a
       color: white       
     &:before
+      @extend $before-title-style
       float: left
-      color: black
-      font-family: SimHei
       margin-right: 0.5em
       margin-top: 0.2em
       content: "标签:"
-    &:after
-      clear: both
-      content: ""
+  
 
 .article-tag-list-item
   float: left
