@@ -2,10 +2,13 @@
 menu:
   Home: /
   Archives: /archives
-  Category: /categories
-  Tag: /tags
-  rss: /atom.xml 
+  Tags: /tags
+  About: /about
+  RSS: /atom.xml 
 
+#logo-wrap
+logo_wrap: bili meets hexo
+subtitle_wrap: 日常 异常
 
 # Content
 excerpt_link: Read More
