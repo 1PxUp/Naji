@@ -4,6 +4,8 @@ $block-caption
   margin-bottom: 1em
   line-height: 1em
   text-shadow: 0 1px #fff
+  &:hover
+   color: color-green
 
 $logo-text
   text-decoration: none
@@ -16,14 +18,14 @@ $nav-link
   opacity: 1
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  transition: opacity 0.2s
+  transition:  text-decoration 0.2s
   display: inline-block
   padding: 0.5em
   margin: 25px 0 20px 0
   &:hover
-    color: color-red
-    background-color: color-lightgray
-    opacity: 0.6
+    text-decoration: underline
+    color: color-gray
+    opacity: 0.5
 
 $block
   background: #fff
@@ -33,6 +35,7 @@ $block
 
 $before-title-style
   color: black
+  margin-right: 0.25em
   font-family: SimHei
   font-family: font-icon
 

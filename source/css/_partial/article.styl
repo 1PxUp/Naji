@@ -31,7 +31,7 @@
 
 .article-meta
   clearfix()
-  padding: 0 article-padding 0
+  padding: 0 article-padding 0 
 
 .article-date
   @extend $block-caption
@@ -39,16 +39,10 @@
   &:before
     @extend $before-title-style
     content: "\f073"
-  &:after
-    margin-left: 0.5em
-    color: gray
-    font-weight: bold
-    content:"\007c"
 
 .article-category
+  @extend $block-caption
   float: left
-  line-height: 1em
-  color: #ccc
   text-shadow: 0 1px #fff
   margin-left: 1em
   &:before
@@ -69,16 +63,15 @@
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-black
+      color: color-red
 
 .article-tag-list
     overflow-x: auto
     a
-      color: white       
+      color: color-default       
     &:before
       @extend $before-title-style
       float: left
-      margin-right: 0.5em
       margin-top: 0.2em
       content: "\f02c"
   
@@ -86,9 +79,7 @@
 .article-tag-list-item
   float: left
   padding: 0.2em 0.5em
-  background: color-default
-  border-radius: 0.3em
-  margin-right: 10px
+
  
 
 .article-tag-list-link
