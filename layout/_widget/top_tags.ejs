@@ -1,0 +1,12 @@
+<% if (site.tags.length){ %>
+  <div class="widget-wrap">
+    <h3 class="widget-title"><%= __('top_tags') %></h3>
+    <div class="widget top_tags">
+  	<%- tagcloud({
+        amount: 10
+    }) %>
+</div>
+
+
+  </div>
+<% } %>
