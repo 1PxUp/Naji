@@ -1,16 +1,28 @@
-<br>
-
-<p class="count"></p>
-
-<div class="tags" style=" height:200px; text-align:center">
+<div class="tags-tagcloud">
+<h3 class="tags-title"><%= __('tagcloud') %></h3>
     <%- tagcloud({
         min_font: 16, 
         max_font: 35, 
         amount: 999, 
         color: true, 
         start_color: 'gray', 
-        end_color: 'red',
+        end_color: 'black',
     }) %>
 </div>
+
+
+<div class="tags-categories">
+<h3 class="tags-title"><%= __('categories') %></h3>
+    <%- list_categories({
+        depth: 1,
+    }) %>
+</div>
+
+
+<div class="tag-tags">
+<h3 class="tags-title"><%= __('tags') %></h3>
+    <%- list_tags({
+        depth: 1,
+    }) %>
 
 
