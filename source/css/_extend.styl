@@ -1,11 +1,14 @@
 $block-caption
   text-decoration: none
-  color: color-grey
-  margin-bottom: 1em
-  line-height: 1em
-  text-shadow: 0 1px #fff
+  color: color-red
+  margin-right: 1em
+  font-size: font-size
   &:hover
    color: color-green
+   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+   text-decoration: underline
+ 
+
 
 $logo-text
   text-decoration: none
@@ -15,17 +18,18 @@ $logo-text
 
 $nav-link
   color: color-nav
+  font-size: 1.1em
   opacity: 1
   text-decoration: none
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
-  transition:  text-decoration 0.2s
+  transition:  text-decoration 2s
   display: inline-block
   padding: 0.5em
   margin: 25px 0 20px 0
   &:hover
     text-decoration: underline
     color: color-gray
-    opacity: 0.5
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+    opacity: 0.7
 
 $block
   background: #fff
@@ -36,8 +40,8 @@ $block
 $before-title-style
   color: black
   margin-right: 0.25em
-  font-family: SimHei
   font-family: font-icon
+
 
 $base-style
   h1
@@ -52,7 +56,7 @@ $base-style
     font-size: 1em
   h6
     font-size: 1em
-    color: color-grey
+    color: color-gray
   hr
     border: 1px dashed color-border
   strong

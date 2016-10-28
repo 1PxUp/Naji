@@ -1,5 +1,6 @@
 .article
   margin-bottom: block-margin
+
 .article-inner
   @extend $block
   overflow: hidden
@@ -16,7 +17,8 @@
 
 .article-header
   padding: article-padding
-  border-left: 0.4em solid color-default
+  border-left: 5px solid color-default
+  padding-left: article-padding - 5px
  
 .article-title
   text-decoration: none
@@ -32,6 +34,7 @@
 .article-meta
   clearfix()
   padding: 0 article-padding 0 
+  margin-bottom: 1em
 
 .article-date
   @extend $block-caption
@@ -43,8 +46,6 @@
 .article-category
   @extend $block-caption
   float: left
-  text-shadow: 0 1px #fff
-  margin-left: 1em
   &:before
     @extend $before-title-style
     content: "\f02e"
@@ -54,37 +55,30 @@
 
 .article-footer
   clearfix()
-  font-size: 0.85em
+  font-size: 0.9em
   line-height: line-height
-  border-bottom:1px solid color-border
+  border-bottom: 1px solid color-border
   padding-bottom: 0.5em
   margin: 0 article-padding 0
   a
-    color: color-grey
+    color: color-red
     text-decoration: none
     &:hover
-      color: color-red
+      text-decoration: underline
+      color: color-green
 
 .article-tag-list
-    overflow-x: auto
-    a
-      color: color-default       
+    overflow-x: auto      
     &:before
-      @extend $before-title-style
       float: left
-      margin-top: 0.2em
+      @extend $before-title-style
+      padding-right: 0.25em
       content: "\f02c"
   
 
 .article-tag-list-item
   float: left
-  padding: 0.2em 0.5em
-
- 
-
-.article-tag-list-link
-  &:before
-    content: ""
+  padding-right: 0.9em
 
 .article-comment-link
   float: right
@@ -94,6 +88,7 @@
     padding-right: 8px
 
 .article-share-link
+  display: none
   cursor: pointer
   float: right
   margin-right: 0.5em
@@ -165,8 +160,8 @@
       margin-right: 0.5em
       margin-left: 1em
   .caption
-    color: color-grey
-    display: block
+    display: none
+    color: color-gray
     font-size: 0.9em
     margin-top: 0.5em
     position: relative
@@ -189,14 +184,15 @@
   display: inline-block
   line-height: 1em
   padding: 6px 15px
-  border-radius: 15px
+  border-radius: 3px
+  border: 1px solid color-red
+  color: color-red
   background: color-background
-  color: color-grey
   text-shadow: 0 1px #fff
   text-decoration: none
   &:hover
     background: color-link
-    color: #fff
+    color: color-white
     text-decoration: none
     text-shadow: 0 1px darken(color-link, 20%)
 
@@ -216,7 +212,7 @@
 .article-nav-link-wrap
   text-decoration: none
   text-shadow: 0 1px #fff
-  color: color-grey
+  color: color-gray
   box-sizing: border-box
   margin-top: block-margin
   text-align: center
