@@ -2,37 +2,38 @@
    color: color-lightgray
    font-weight: 600
    font-size: 1em
-   text-align: center
-   text-sahdow: 1px 0 1px rgba(0, 0, 0 , 0.5)
-   margin: 1em
+   text-shadow: 1px 0px rgba(0, 0, 0 , 0.2)
+   margin: 0.5em
 
 .tags-tagcloud
    font-size: 1em
    text-align: center
-   padding: 30px 0
+   margin: 40px 0
    a
      padding: 0.3em
 
-
-.tags-categories
+.tags-and-categories
+  display: block
+  position: relative
+  float: left
+  margin: 40px 0 
+  width: 30%
+  margin-left: 19%
   a 
     color: color-red
     line-height: line-height
-  margin-top 20px
-  padding: 30px 0
-  font-size: 1.25em
-  width: 49%
-  float: left
-  text-align: center
+    font-size: 1.25em
+  ul 
+    display: block
+    text-align: left
+  @media mq-mobile
+    width: 59%
+    margin-left: 40%
+    ul
+      line-height: 1.9em
+      font-size: 1.4em
+    
 
-.tag-tags
-  a
-    color: color-red
-    line-height: line-height
-  padding: 30px 0
-  margin-top 20px
-  font-size: 1.25em
-  width: 49%
-  float: right
-  text-align: center
+
+
 
