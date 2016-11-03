@@ -1,0 +1,18 @@
+<% if (site.posts.length){ %>
+  <div class="widget-wrap">
+    <h3 class="widget-title"> 网站统计：</h3>
+    <div class="widget">
+
+    <p class="posts-length">发表文章：<%= site.posts.length %> 篇</p>
+
+    <% if (site.categories.length){ %> 
+    <p class="categories-length"> 已有 <%= site.categories.length %> 个分类</p>
+    <% } %>
+
+    <% if (site.tags.length){ %> 
+    <p class="tags-length">共计<%= site.tags.length %>个标签</p>
+    <% } %>
+
+    </div>
+  </div>
+<% } %>

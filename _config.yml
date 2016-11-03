@@ -18,6 +18,7 @@ fancybox: true
 sidebar: bottom
 widgets:
 - top_tags
+  ##- wangzhantongji
   ##- tagcloud
   ##- recent_posts  ##修改侧边排版
   ##- archive
