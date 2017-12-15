@@ -1,5 +1,5 @@
 #Naji
-Naji是一款hexo主题，基于默认主题landscape二次开发。你可以点击[Demo | bilimin meets hexo](http://wwww.bilimin.ga)查看效果。
+Naji是一款hexo主题，基于默认主题landscape二次开发。你可以点击 [bilimin meets hexo](http://wwww.bilimin.ga) 查看效果。
 
 ##安装
 ```
